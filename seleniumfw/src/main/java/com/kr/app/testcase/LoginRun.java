@@ -7,21 +7,53 @@ import supports.CommonFunctions;
 
 public class LoginRun {
 
-	@Test
-	public void testLoginSucess() throws InterruptedException {
-		CommonFunctions.setBrowser("chrome");
+//	@Test
+//	public void testLoginSucess() throws InterruptedException {
+//		CommonFunctions.setBrowser("chrome");
+//		Action page = new Action(CommonFunctions.getDriver());
+//		page.openApplication();
+//		page.testLoginSuccess();
+//		Thread.sleep(5000);
+//		CommonFunctions.closeBrowser();
+//
+//	}
 
-		LoginKR page = new LoginKR(CommonFunctions.getDriver());
+//	@Test
+//	public void testFilterSchoolbyName() throws InterruptedException {
+//		CommonFunctions.setBrowser("chrome");
+//		Action page = new Action(CommonFunctions.getDriver());
+//		page.openApplication();
+//		page.testLoginSuccess();
+//		Thread.sleep(1000);
+//		page.FilterSchoolbyName();
+//		Thread.sleep(1000);
+//		CommonFunctions.waitForElementPresence("xpath", "//mat-cell[contains(.,'TEST SCHOOL 8')]");
+//		CommonFunctions.closeBrowser();
+//	}
+//	
+//	@Test
+//	public void testFilterSchoolbyCode() throws InterruptedException {
+//		CommonFunctions.setBrowser("chrome");
+//		Action page = new Action(CommonFunctions.getDriver());
+//		page.openApplication();
+//		page.testLoginSuccess();
+//		Thread.sleep(1000);
+//		page.FilterSchoolbyCode();
+//		Thread.sleep(1000);
+//		CommonFunctions.waitForElementPresence("xpath", "//mat-cell[contains(.,'200')]");
+//		CommonFunctions.closeBrowser();
+//	}
+//	
+	@Test
+	public void testAddStudent() throws InterruptedException {
+		CommonFunctions.setBrowser("chrome");
+		Action page = new Action(CommonFunctions.getDriver());
 		page.openApplication();
 		page.testLoginSuccess();
-		Thread.sleep(5000);
+//		Thread.sleep(1000);
+		page.AddStudentSuccess();
+//		Thread.sleep(1000);
+//		CommonFunctions.waitForElementPresence("xpath", "//mat-cell[contains(.,'200')]");
 		CommonFunctions.closeBrowser();
-
 	}
-
-	@Test
-	public void testAhihi() throws InterruptedException {
-		Assert.assertEquals(1, 2);
-	}
-
 }
