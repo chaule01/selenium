@@ -8,7 +8,7 @@ public class Main {
 
 	// mvnw exec:java
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(com.kr.app.testsuite.LoginTestSuiteTest.class);
+		Result result = JUnitCore.runClasses(com.kr.app.testsuite.TestSuiteKRTest.class);
 
 	    for (Failure failure : result.getFailures()) {
 	       System.out.println(failure.toString());

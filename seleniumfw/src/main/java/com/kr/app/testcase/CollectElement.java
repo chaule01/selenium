@@ -85,10 +85,28 @@ public class CollectElement {
 	public WebElement addbtn;
 
 //	Verify new student
-	@FindBy(xpath = "/input[@placeholder='Student ID']")
+	@FindBy(xpath = "//input[@placeholder='First Name']")
+	public WebElement searchfirstname;
+	
+	@FindBy(xpath = "//input[@placeholder='Last Name']")
+	public WebElement searchlastname;
+	
+	@FindBy(xpath = "//input[@placeholder='Student ID']")
 	public WebElement searchstuID;
 	
 	@FindBy(id = "btn-search")
 	public WebElement filstubtn;
+	
+//	Delete new student	
+	@FindBy(xpath = "//mat-cell[contains(.,'STD002')]")
+	public WebElement clicknewstu;
+	
+	@FindBy(xpath = "//div/button[@mat-stroked-button][@color='warn']")
+	public WebElement delstu;
+	
+	@FindBy(xpath = "//mat-dialog-actions/button[@mat-dialog-close='confirm']")
+	public WebElement delconfirm;
+	
+	
 
 }

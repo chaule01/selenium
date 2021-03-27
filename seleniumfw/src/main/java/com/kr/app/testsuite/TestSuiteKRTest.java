@@ -7,6 +7,6 @@ import com.kr.app.testcase.LoginRun;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({ LoginRun.class })
-public class LoginTestSuiteTest {
+public class TestSuiteKRTest {
 
 }

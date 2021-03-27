@@ -1,5 +1,7 @@
 package com.kr.app.testcase;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -13,11 +15,11 @@ public class LoginRun {
 //		Action page = new Action(CommonFunctions.getDriver());
 //		page.openApplication();
 //		page.testLoginSuccess();
-//		Thread.sleep(5000);
+//		Thread.sleep(1000);
 //		CommonFunctions.closeBrowser();
 //
 //	}
-
+//
 //	@Test
 //	public void testFilterSchoolbyName() throws InterruptedException {
 //		CommonFunctions.setBrowser("chrome");
@@ -50,10 +52,8 @@ public class LoginRun {
 		Action page = new Action(CommonFunctions.getDriver());
 		page.openApplication();
 		page.testLoginSuccess();
-//		Thread.sleep(1000);
 		page.AddStudentSuccess();
-//		Thread.sleep(1000);
-//		CommonFunctions.waitForElementPresence("xpath", "//mat-cell[contains(.,'200')]");
+//		CommonFunctions.waitForElementPresence("xpath", "//mat-cell[contains(.,'STD002')]");
 		CommonFunctions.closeBrowser();
 	}
 }
